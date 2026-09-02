@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina xd1</title>
+</head>
+<body>
+
+    <!-- Encabezados -->
+    <h1>Pagina de demostracion</h1>
+    <h2>Subtitulo con H2</h2>
+    <h3>Seccion con H3</h3>
+
+    <!-- Imagen 1 -->
+    <img src="meme1.jpg" alt="Foto de ejemplo" width="400" height="200">
+
+    <!-- Tres tipos de enlaces -->
+    <p>
+        <a href="https://github.com" target="_blank">GitHub</a> |
+        <a href="https://www.upea.bo" target="_blank">UPEA</a> |
+        <a href="#contacto">Ir a contacto</a>
+    </p>
+
+    <!-- Video con controls y mensaje alternativo -->
+    <video width="400" controls>
+        <source src="momo3.mp4" type="video/mp4">
+    </video>
+
+    <!-- Audio con controls -->
+    <audio controls>
+        <source src="momo4.mp4" type="audio/mpeg">
+    </audio>
+
+    <!-- Lista desordenada: 6 habilidades -->
+    <h3>Habilidades</h3>
+    <ul>
+        <li>HTML semantico</li>
+        <li>CSS flexbox</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>Diseno responsivo</li>
+        <li>Trabajo en equipo</li>
+    </ul>
+
+    <!-- Lista ordenada: 5 metas -->
+    <h3>Metas</h3>
+    <ol>
+        <li>Aprender React</li>
+        <li>Publicar un proyecto</li>
+        <li>Certificacion en accesibilidad</li>
+        <li>Estudiar TypeScript</li>
+        <li>Contribuir a codigo abierto</li>
+    </ol>
+
+    <!-- Segunda imagen -->
+    <h3>Proyecto</h3>
+    <img src="meme2.jpg" alt="Captura de proyecto" width="400" height="200">
+
+    <!-- Tabla completa: 5 materias reales -->
+    <h3>Materias</h3>
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Numero</th>
+                <th>Materia</th>
+                <th>Codigo</th>
+                <th>Creditos</th>
+                <th>Docente</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ingenieria de Redes</td>
+                <td>IDR-635</td>
+                <td>4</td>
+                <td>Rojas</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Investigacion Operativa</td>
+                <td>IO 2-02</td>
+                <td>5</td>
+                <td>Paredes</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tecnologias Emergentes</td>
+                <td>TEM-636</td>
+                <td>3</td>
+                <td>Mamani</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Analisis y Diseño II</td>
+                <td>AND-632</td>
+                <td>4</td>
+                <td>Villca</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ingenieria de Control</td>
+                <td>IDC-633</td>
+                <td>4</td>
+                <td>Choque</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario con los 9 tipos. El h2 tiene id="contacto" para el ancla -->
+    <h2 id="contacto">Contacto</h2>
+    <form action="#" method="post">
+
+        <!-- 1. text -->
+        <label>Nombre:</label>
+        <input type="text" name="nombre" placeholder="Tu nombre"><br><br>
+
+        <!-- 2. email -->
+        <label>Correo:</label>
+        <input type="email" name="email" placeholder="correo@ejemplo.com"><br><br>
+
+        <!-- 3. tel -->
+        <label>Telefono:</label>
+        <input type="tel" name="telefono" placeholder="+591 12345678"><br><br>
+
+        <!-- 4. date -->
+        <label>Fecha:</label>
+        <input type="date" name="fecha"><br><br>
+
+        <!-- 5. radio -->
+        <label>Preferencia:</label><br>
+        <input type="radio" name="preferencia" value="email" id="radio_email">
+        <label for="radio_email">Email</label>
+        <input type="radio" name="preferencia" value="telefono" id="radio_telefono">
+        <label for="radio_telefono">Telefono</label>
+        <input type="radio" name="preferencia" value="whatsapp" id="radio_whatsapp">
+        <label for="radio_whatsapp">WhatsApp</label><br><br>
+
+        <!-- 6. checkbox -->
+        <label>Intereses:</label><br>
+        <input type="checkbox" name="interes" value="web" id="chk_web">
+        <label for="chk_web">Desarrollo Web</label>
+        <input type="checkbox" name="interes" value="movil" id="chk_movil">
+        <label for="chk_movil">Apps Moviles</label>
+        <input type="checkbox" name="interes" value="ia" id="chk_ia">
+        <label for="chk_ia">Inteligencia Artificial</label><br><br>
+
+        <!-- 7. select -->
+        <label>Motivo:</label>
+        <select name="motivo">
+            <option value="soporte">Soporte tecnico</option>
+            <option value="ventas">Ventas</option>
+            <option value="informacion">Informacion</option>
+            <option value="otros">Otros</option>
+        </select><br><br>
+
+        <!-- 8. textarea -->
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje" rows="3" cols="40" placeholder="Escribe tu mensaje aqui..."></textarea><br><br>
+
+        <!-- 9. button -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Iframe de Google Maps con comentario explicativo -->
+    <h3>Ubicacion</h3>
+    <!-- 
+        COMENTARIO:
+        Para obtener el src de Google Maps:
+        1. Abre Google Maps web para acceder al src y busca una ubicacion.
+        2. Haz clic en Compartir -> Insertar un mapa.
+        3. Copia el atributo src del iframe generado.
+        4. Reemplaza el src actual por el tuyo.
+    -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1466.8631904773922!2d-68.19502999452854!3d-16.49346319325103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf003dec12e7%3A0x1b2669bac07dc20e!2sUPEA%20Juan%20Pablo%20II!5e0!3m2!1ses-419!2sbo!4v1788221892227!5m2!1ses-419!2sbo" width="400", height="250", style="border:0;", allowfullscreen="", loading="lazy"></iframe>
+
+    <hr>
+    <footer>
+        <p>Pagina basica HTML - Todos los elementos requeridos</p>
+    </footer>
+
+</body>
+</html>
